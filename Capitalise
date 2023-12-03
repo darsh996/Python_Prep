@@ -1,0 +1,45 @@
+final
+
+def solve(s):
+    return " ".join(list(map(str.capitalize, s.split(' '))))
+
+---------------------
+Failed test case 2
+
+
+def solve(s):
+    if s.isdigit():
+        return s
+    return s.title()
+-----------------------------
+
+def solve(s):
+    if s.isdigit():
+        return s
+    s.split()
+    result = []
+    word = ''
+    for char in s:
+        if char.isalpha():
+            word += char
+        else:
+            if word:
+                result.append(word.title())
+                word = ''
+            result.append(char)
+    if word:
+        result.append(word.title())
+    return ''.join(result)
+---------------------------------------
+
+# Complete the solve function below.
+def solve(s):
+    strn=s.split()
+    empt=[]
+    for i in strn:
+        empt.append(i.capitalize())
+    empt=" ".join(empt)
+    return empt
+--------------------------
+
+ 
