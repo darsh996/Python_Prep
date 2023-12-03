@@ -1,0 +1,13 @@
+n=int(input())
+shoe_size=list(map(int,input().split()))
+customers=int(input())
+bill=0
+
+for i in range(customers):
+    size,price=list(map(int,input().split()))
+    
+    if size in shoe_size:
+        bill+=price
+        shoe_size.remove(size)
+    
+print(bill)
