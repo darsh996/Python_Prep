@@ -1,0 +1,10 @@
+x = set(arr)
+x.remove(max(x))
+print(max(x))
+-------------------
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    no_dup_list= list(set(arr))
+    no_dup_list.sort()
+    print(no_dup_list[-2])
