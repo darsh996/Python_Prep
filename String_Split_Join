@@ -1,0 +1,4 @@
+def split_and_join(line):
+    result = ""
+    result = line.replace(" ", "-") 
+    return result
